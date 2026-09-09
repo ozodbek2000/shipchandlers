@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шипчандлер — Комплексное судовое снабжение в морских портах 24/7</title>
+  <meta name="description" content="Профессиональное судовое снабжение: доставка продуктов питания, технических товаров, запчастей, медикаментов и хозяйственного инвентаря на суда во всех морских портах РФ.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  
+  <!-- Google Fonts: Inter & Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== TOPBAR ==================== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__contacts">
+        <div class="topbar__item badge-247">
+          <span>Диспетчерская служба 24/7</span>
+        </div>
+        <div class="topbar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Порты базирования: Новороссийск, Санкт-Петербург, Владивосток, Мурманск</span>
+        </div>
+      </div>
+      <div class="topbar__meta">
+        <div class="topbar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:supply@shipchandlers.pro">supply@shipchandlers.pro</a>
+        </div>
+        <div class="lang-switch">
+          <button type="button" class="lang-switch__btn lang-switch__btn--active">RU</button>
+          <button type="button" class="lang-switch__btn">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Главная страница">
+        <img src="assets/img/logo.svg" alt="Логотип Шипчандлер" class="logo__img" width="44" height="44">
+        <div class="logo__text">
+          <span class="logo__name">Морской <span>Снабженец</span></span>
+          <span class="logo__desc">Судовое снабжение & Шипчандлинг</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav" id="main-nav" aria-label="Главная навигация">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">
+              <span>Услуги</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item"><a href="service-single.html?service=provisions">Доставка продуктов питания</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=technical">Судовое техническое снабжение</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=medicine">Доставка медикаментов</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=spare-parts">Доставка запчастей и инструмента</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=electronics">Судовая электроника и навигация</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=workwear">Спецодежда и СИЗ экипажа</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=household">Хозяйственные товары и химия</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#vessels" class="nav__link">
+              <span>Морские суда</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item"><a href="#vessels">Сухогрузы и балкеры</a></li>
+              <li class="nav__dropdown-item"><a href="#vessels">Наливные суда и танкеры</a></li>
+              <li class="nav__dropdown-item"><a href="#vessels">Промысловые суда и траулеры</a></li>
+              <li class="nav__dropdown-item"><a href="#vessels">Пассажирские лайнеры</a></li>
+              <li class="nav__dropdown-item"><a href="#vessels">Речные суда и баржи</a></li>
+              <li class="nav__dropdown-item"><a href="#vessels">Маломерные суда и буксиры</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#ports" class="nav__link">Порты</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header__actions">
+        <div class="header__phone">
+          <a href="tel:+78005553535" class="header__phone-link">+7 (800) 555-35-35</a>
+          <span class="header__phone-label">Бесплатно по РФ / 24/7</span>
+        </div>
+        <a href="#order-form" class="btn btn--primary btn--sm">Оставить заявку</a>
+        
+        <!-- Mobile Hamburger -->
+        <button type="button" class="header__toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__badge-wrap">
+        <span class="hero__badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+          Срочная подача от 2 часов
+        </span>
+        <span class="hero__badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Стандарты IMPA / ISSA / ISO 9001
+        </span>
+      </div>
+
+      <h1 class="hero__title">
+        Комплексное <span>судовое снабжение</span> и шипчандлинг в морских портах
+      </h1>
+
+      <p class="hero__lead">
+        Оперативная доставка свежих продуктов питания, сертифицированного технического оборудования, судовой химии, медикаментов и запчастей прямо к борту судна или на рейд 24/7.
+      </p>
+
+      <div class="hero__ports">
+        <span class="hero__ports-title">Порты обслуживания:</span>
+        <span class="port-tag">Новороссийск</span>
+        <span class="port-tag">Санкт-Петербург</span>
+        <span class="port-tag">Владивосток</span>
+        <span class="port-tag">Мурманск</span>
+        <span class="port-tag">Калининград</span>
+        <span class="port-tag">Тамань</span>
+        <span class="port-tag">Астрахань</span>
+        <span class="port-tag">Находка</span>
+      </div>
+
+      <div class="hero__actions">
+        <a href="#order-form" class="btn btn--primary btn--lg">Получить прайс-лист</a>
+        <a href="#services" class="btn btn--outline btn--lg">Каталог товаров</a>
+      </div>
+
+      <div class="hero__metrics">
+        <div class="metric">
+          <div class="metric__value">&gt; 500</div>
+          <div class="metric__label">Снабженных судов за прошлый год</div>
+        </div>
+        <div class="metric">
+          <div class="metric__value">24 / 7</div>
+          <div class="metric__label">Круглосуточная отгрузка и диспетчеризация</div>
+        </div>
+        <div class="metric">
+          <div class="metric__value">100%</div>
+          <div class="metric__label">Соответствие международным каталогам IMPA</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GOODS & PROVISIONS GRID (10 CARDS) ==================== -->
+  <section class="section section--light" id="services">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__badge">Каталог номенклатуры</span>
+        <h2 class="section__title">Товары и продуктовое снабжение</h2>
+        <p class="section__subtitle">
+          Широкий ассортимент сертифицированной продукции с соблюдением температурных режимов и санитарных норм морского регистра.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- Card 1: Vegetables & Fruits -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">01</span>
+            <img src="assets/img/categories/cat-vegetables.jpg" alt="Свежие овощи и фрукты для судов" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Овощи и фрукты</h3>
+            <p class="service-card__desc">
+              Свежие сезонные и калиброванные фрукты, овощи, зелень в прочной экспортной таре с длительным сроком хранения для длительных рейсов.
+            </p>
+            <a href="service-single.html?service=vegetables" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2: Groceries & Grains -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">02</span>
+            <img src="assets/img/categories/cat-groceries.jpg" alt="Бакалея и крупы на складе шипчандлера" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Бакалея и крупы</h3>
+            <p class="service-card__desc">
+              Мука, рис, крупы, сахар, растительные масла, макаронные изделия, консервы и специи в герметичной морской фасовке.
+            </p>
+            <a href="service-single.html?service=groceries" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 3: Meat & Fish -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">03</span>
+            <img src="assets/img/categories/cat-meat-fish.jpg" alt="Охлажденное и замороженное мясо и рыба" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Мясо и рыба</h3>
+            <p class="service-card__desc">
+              Охлажденная и глубокой заморозки говядина, свинина, птица, лососевые и морская рыба, морепродукты с ветеринарными сертификатами.
+            </p>
+            <a href="service-single.html?service=meat-fish" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 4: Bonded Stores -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">04</span>
+            <img src="assets/img/categories/cat-bonded.jpg" alt="Таможенный склад и Bonded stores" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Алкоголь и табак (Bonded)</h3>
+            <p class="service-card__desc">
+              Беспошлинное снабжение экипажа (duty-free): лицензированная алкогольная продукция, премиальный табак, кондитерские изделия.
+            </p>
+            <a href="service-single.html?service=bonded" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 5: Household & Galley -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">05</span>
+            <img src="assets/img/categories/cat-household.jpg" alt="Хозяйственные товары и судовая химия" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Хозяйственные товары</h3>
+            <p class="service-card__desc">
+              Профессиональная камбузная химия, инвентарь для уборки, протирочные материалы, постельное белье и средства гигиены экипажа.
+            </p>
+            <a href="service-single.html?service=household" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 6: Beverages & Water -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">06</span>
+            <img src="assets/img/categories/cat-beverages.jpg" alt="Бутилированная питьевая вода и соки" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Напитки и питьевая вода</h3>
+            <p class="service-card__desc">
+              Бутилированная артезианская и минеральная вода в таре от 0.5 до 19 л на европаллетах, натуральные соки, чай, кофе.
+            </p>
+            <a href="service-single.html?service=beverages" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 7: Marine Electronics -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">07</span>
+            <img src="assets/img/categories/cat-electronics.jpg" alt="Судовое электронное оборудование и навигация" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Судовая электроника</h3>
+            <p class="service-card__desc">
+              Радары, радиостанции УКВ/ПВ/КВ, эхолоты, GPS/ГЛОНАСС приемники, аварийные радиобуи (АРБ) и аккумуляторы с сертификатами РМРС.
+            </p>
+            <a href="service-single.html?service=electronics" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 8: Tools & Marine Spare Parts -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">08</span>
+            <img src="assets/img/categories/cat-tools-parts.jpg" alt="Судовые запчасти, клапаны и инструмент" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Инструмент и запчасти</h3>
+            <p class="service-card__desc">
+              Запорная арматура, клапаны, фильтры, пневмо- и электроинструмент, такелаж, тросы, кранцы и расходные материалы по IMPA/ISSA.
+            </p>
+            <a href="service-single.html?service=spare-parts" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 9: Workwear & Protective Gear -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">09</span>
+            <img src="assets/img/categories/cat-clothing.jpg" alt="Морская спецодежда и средства индивидуальной защиты" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Спецодежда и экипировка</h3>
+            <p class="service-card__desc">
+              Штормовые костюмы, сигнальные жилеты, огнестойкие комбинезоны, каски, спецобувь с металлическим подноском и спасательные круги.
+            </p>
+            <a href="service-single.html?service=clothing" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 10: Medicine & Medical Kits -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">10</span>
+            <img src="assets/img/categories/cat-medicine.jpg" alt="Судовые медицинские аптечки и медикаменты" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Медикаменты и аптечки</h3>
+            <p class="service-card__desc">
+              Комплектация судовых лазаретов и аварийных аптечек в соответствии с международной конвенцией MLC 2006 и требованиями ВОЗ.
+            </p>
+            <a href="service-single.html?service=medicine" class="service-card__link">
+              <span>Подробнее</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ADVANTAGES SECTION (3 COLUMNS) ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__badge">Почему выбирают нас</span>
+        <h2 class="section__title">Надежность поставок в каждом порту</h2>
+        <p class="section__subtitle">
+          Собственная портовая инфраструктура и отлаженная логистика минимизируют время стоянки судна у причала.
+        </p>
+      </div>
+
+      <div class="advantages-grid">
+        <!-- Advantage 1 -->
+        <div class="adv-card fade-in">
+          <div class="adv-card__media">
+            <img src="assets/img/advantages/adv-cold-storage.jpg" alt="Холодильный склад шипчандлера" class="adv-card__img" loading="lazy">
+          </div>
+          <div class="adv-card__body">
+            <div class="adv-card__icon-badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="adv-card__title">Собственный рефрижераторный склад</h3>
+            <p class="adv-card__text">
+              Многотемпературные складские терминалы класса А в шаговой доступности от портовых причалов. Гарантия свежести охлажденной и замороженной продукции.
+            </p>
+          </div>
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="adv-card fade-in">
+          <div class="adv-card__media">
+            <img src="assets/img/advantages/adv-quay-delivery.jpg" alt="Доставка снабжения прямо к трапу судна" class="adv-card__img" loading="lazy">
+          </div>
+          <div class="adv-card__body">
+            <div class="adv-card__icon-badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3 class="adv-card__title">Прямая доставка к борту и на рейд</h3>
+            <p class="adv-card__text">
+              Собственный автопарк специализированных рефрижераторов и буксирные плавсредства для оперативной выгрузки на рейде при любой погоде.
+            </p>
+          </div>
+        </div>
+
+        <!-- Advantage 3 -->
+        <div class="adv-card fade-in">
+          <div class="adv-card__media">
+            <img src="assets/img/advantages/adv-contract.jpg" alt="Надежные контракты и сертификация" class="adv-card__img" loading="lazy">
+          </div>
+          <div class="adv-card__body">
+            <div class="adv-card__icon-badge">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+            </div>
+            <h3 class="adv-card__title">Прямые контракты и стандарты IMPA</h3>
+            <p class="adv-card__text">
+              Работаем напрямую с аккредитованными заводами-изготовителями. Вся продукция сопровождается международными сертификатами качества и паспортами безопасности.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT COMPANY SECTION ==================== -->
+  <section class="section section--light" id="about">
+    <div class="container">
+      <div class="about-block">
+        <div class="about-block__content fade-in">
+          <span class="section__badge">О компании</span>
+          <h2 class="section__title">15 лет безупречного сервиса в портах России</h2>
+          <p class="about-block__text">
+            Наша компания является одним из ведущих независимых шипчандлеров РФ, обеспечивающим бесперебойное комплексное снабжение торговых, промысловых и пассажирских судов отечественного и иностранного флота.
+          </p>
+          <p class="about-block__text">
+            Мы понимаем высокую стоимость каждого часа стоянки судна, поэтому оптимизировали логистические цепочки до автоматизма: от момента получения заявки суперинтенданта до погрузки на палубу проходит не более 3–6 часов.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature__icon">✓</div>
+              <div>
+                <div class="about-feature__title">Членство в ISSA / IMPA</div>
+                <div class="about-feature__desc">Единая международная номенклатура артикулов</div>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature__icon">✓</div>
+              <div>
+                <div class="about-feature__title">Таможенное оформление</div>
+                <div class="about-feature__desc">Собственные лицензии и декларирование грузов</div>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature__icon">✓</div>
+              <div>
+                <div class="about-feature__title">Лабораторный контроль</div>
+                <div class="about-feature__desc">Ветеринарные справки «Меркурий» на всю партию</div>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature__icon">✓</div>
+              <div>
+                <div class="about-feature__title">Гибкие формы расчетов</div>
+                <div class="about-feature__desc">Работа в валюте и рублях, отсрочка платежа</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <a href="about.html" class="btn btn--secondary">Подробнее о компании</a>
+          </div>
+        </div>
+
+        <div class="about-block__media fade-in">
+          <div class="about-block__image-card">
+            <img src="assets/img/about-team.jpg" alt="Команда логистики шипчандлера за работой" loading="lazy">
+          </div>
+          <div class="about-block__exp-badge">
+            <div class="about-block__exp-num">15+</div>
+            <div class="about-block__exp-text">
+              Лет надежной<br>портовой работы
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PARTNERS STRIP ==================== -->
+  <section class="section" style="padding: 2.5rem 0; border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span style="font-size: 0.8125rem; font-weight: 700; color: var(--color-text-light); text-transform: uppercase; letter-spacing: 0.1em;">
+          Нам доверяют судовладельцы и операторы флота
+        </span>
+      </div>
+      <div class="partners-track">
+        <div class="partner-logo-item">MAERSK LINE</div>
+        <div class="partner-logo-item">MSC SHIPPING</div>
+        <div class="partner-logo-item">CMA CGM</div>
+        <div class="partner-logo-item">СОВКОМФЛОТ</div>
+        <div class="partner-logo-item">FESCO</div>
+        <div class="partner-logo-item">РОСМОРПОРТ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SHIPMENTS GALLERY (WITH LIGHTBOX) ==================== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__badge">Фотоотчеты</span>
+        <h2 class="section__title">Наши отгрузки и снабжение судов</h2>
+        <p class="section__subtitle">
+          Регулярные поставки продуктов питания, палубного инвентаря и оборудования у причалов и на рейдах.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Photo 1 -->
+        <div class="gallery-item fade-in">
+          <img src="assets/img/gallery/gallery-1.jpg" alt="Погрузка контейнерного оборудования в порту" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="gallery-item__caption">Погрузка палубного инвентаря на балкер</div>
+            <div class="gallery-item__port">Морской порт Новороссийск</div>
+          </div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-item fade-in">
+          <img src="assets/img/gallery/gallery-2.jpg" alt="Доставка свежей провизии на танкер" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="gallery-item__caption">Снабжение продуктовой группы и воды</div>
+            <div class="gallery-item__port">Большой порт Санкт-Петербург</div>
+          </div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-item fade-in">
+          <img src="assets/img/gallery/gallery-3.jpg" alt="Формирование судовой партии на складе" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="gallery-item__caption">Комплектация партии бакалеи на паллетах</div>
+            <div class="gallery-item__port">Складской терминал Владивосток</div>
+          </div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-item fade-in">
+          <img src="assets/img/gallery/gallery-4.jpg" alt="Ночная отгрузка судна у причала" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="gallery-item__caption">Срочная ночная подача технического снабжения</div>
+            <div class="gallery-item__port">Морской торговый порт Мурманск</div>
+          </div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="gallery-item fade-in">
+          <img src="assets/img/gallery/gallery-5.jpg" alt="Транспортировка грузов автопогрузчиком" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="gallery-item__caption">Выгрузка судовых запасных частей и масел</div>
+            <div class="gallery-item__port">Порт Калининград</div>
+          </div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="gallery-item fade-in">
+          <img src="assets/img/gallery/gallery-6.jpg" alt="Приемка снабжения экипажем судна" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div class="gallery-item__zoom-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div class="gallery-item__caption">Передача Bonded stores и медикаментов</div>
+            <div class="gallery-item__port">Порт Находка</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DIVISIONS SECTION ==================== -->
+  <section class="section section--light" id="divisions">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__badge">Комплексный сервис</span>
+        <h2 class="section__title">Наши подразделения и смежные услуги</h2>
+        <p class="section__subtitle">
+          Оказываем полный спектр портовых и сервисных услуг для обеспечения автономности любого типа судов.
+        </p>
+      </div>
+
+      <div class="divisions-grid">
+        <div class="division-card fade-in">
+          <div class="division-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="division-card__title">Бункеровка топливом и маслами</h3>
+          <p class="division-card__text">
+            Поставка сертифицированных судовых топлив (VLSFO, MGO, LSMGO) и фирменных смазочных материалов ведущих мировых производителей.
+          </p>
+        </div>
+
+        <div class="division-card fade-in">
+          <div class="division-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="division-card__title">Таможенное декларирование</h3>
+          <p class="division-card__text">
+            Полное юридическое и таможенное оформление судового припаса и запасных частей при входе и выходе из территориальных вод РФ.
+          </p>
+        </div>
+
+        <div class="division-card fade-in">
+          <div class="division-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="division-card__title">Технический сервис и освидетельствование</h3>
+          <p class="division-card__text">
+            Ежегодная проверка спасательных плотов (ПСН), систем пожаротушения, газоанализаторов и поверка судовых приборов.
+          </p>
+        </div>
+
+        <div class="division-card fade-in">
+          <div class="division-card__icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="division-card__title">Судовое агентирование</h3>
+          <p class="division-card__text">
+            Организация лоцманской проводки, швартовных операций, смены экипажей, трансфера, буксировки и водоснабжения.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REQUEST / ORDER FORM SECTION ==================== -->
+  <section class="section order-section" id="order-form">
+    <div class="container">
+      <div class="order-wrapper">
+        <div class="order-info fade-in">
+          <span class="section__badge">Быстрый заказ 24/7</span>
+          <h2 class="order-info__title">Получите расчет стоимости снабжения за <span>15 минут</span></h2>
+          <p class="order-info__lead">
+            Отправьте предварительную заявку или номенклатурный список IMPA/ISSA. Дежурный диспетчер порта оперативно сформирует коммерческое предложение с точными сроками доставки к борту.
+          </p>
+          
+          <div class="order-perks">
+            <div class="order-perk-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Фиксация цен в коммерческом предложении без скрытых наценок</span>
+            </div>
+            <div class="order-perk-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Комплектация сложных сборных заказов «под ключ»</span>
+            </div>
+            <div class="order-perk-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Срочная отгрузка при непредвиденных изменениях графика стоянки</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box fade-in">
+          <div class="form-box__header">
+            <h3 class="form-box__title">Заявка на судовое снабжение</h3>
+            <p class="form-box__subtitle">Заполните форму и прикрепите требования к заказу</p>
+          </div>
+
+          <form action="#" method="POST" class="order-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="form-name">Ваше имя и должность *</label>
+              <input type="text" id="form-name" name="name" class="form-control" placeholder="Например: Иван (Суперинтендант)" required>
+              <span class="form-error-msg">Пожалуйста, укажите контактное лицо (минимум 2 символа)</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-phone">Контактный телефон *</label>
+              <input type="tel" id="form-phone" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+              <span class="form-error-msg">Укажите корректный номер телефона</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-email">Электронная почта (Email)</label>
+              <input type="email" id="form-email" name="email" class="form-control" placeholder="supply@vessel-operator.com">
+              <span class="form-error-msg">Укажите корректный адрес email</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="form-port">Порт стоянки и название судна</label>
+              <input type="text" id="form-port" name="port_vessel" class="form-control" placeholder="Например: Новороссийск, т/х «Балтика»">
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="form-consent" name="consent" required checked>
+              <label for="form-consent">
+                Я согласен на <a href="#">обработку персональных данных</a> и согласен с политикой конфиденциальности.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full btn--lg">
+              <span>Отправить заявку диспетчеру</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+
+            <div class="form-status" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACTS & DISPATCH (REDESIGNED) ==================== -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__badge">Круглосуточная связь</span>
+        <h2 class="section__title">Связь с нами и портовая диспетчеризация</h2>
+        <p class="section__subtitle">
+          Прямое оперативное взаимодействие с судовыми агентами, капитанами и техническими отделами судовладельцев 24/7/365.
+        </p>
+      </div>
+
+      <div class="contacts-grid-modern">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+          
+          <!-- Dispatch Card -->
+          <div class="contacts-dispatch-card fade-in">
+            <span class="dispatch-badge">Центральный пост координации 24/7</span>
+            <h3 style="font-size: 1.375rem; margin-bottom: 0.5rem;">Дежурный суперинтендант</h3>
+            <p class="dispatch-sub">Срочные заявки, аварийная подача снабжения и отслеживание рейдовых катеров:</p>
+            
+            <a href="tel:+78005553535" class="dispatch-phone-huge">+7 (800) 555-35-35</a>
+            <div style="font-size: 0.875rem; color: #94A3B8; margin-bottom: 1.25rem;">Городской пост: +7 (8617) 60-00-01 (Новороссийск / Юг)</div>
+
+            <div class="channel-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.2 19.1 19.1"/></svg>
+              <span>Морская радиосвязь: УКВ Канал 16 / 74 (Позывной: «Снабженец-1»)</span>
+            </div>
+
+            <div style="margin-top: 0.5rem;">
+              <div style="font-size: 0.8125rem; font-weight: 700; color: #CBD5E1; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Мессенджеры дежурной смены (ответ до 3 минут):</div>
+              <div class="messenger-btns">
+                <a href="https://wa.me/79000000000" target="_blank" rel="noopener noreferrer" class="btn-messenger btn-messenger--wa">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                  <span>WhatsApp Диспетчер</span>
+                </a>
+                <a href="https://t.me/shipchandler_bot" target="_blank" rel="noopener noreferrer" class="btn-messenger btn-messenger--tg">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.197 1.006.128.828.942z"/></svg>
+                  <span>Telegram Канал</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Department Contacts Inside -->
+            <div class="contacts-dept-grid">
+              <div class="dept-card">
+                <div class="dept-card__info">
+                  <h4>Отдел провизии и питания</h4>
+                  <p>Калькуляция Provision List, сертификаты HACCP</p>
+                </div>
+                <div class="dept-card__contact">
+                  <a href="mailto:provisions@shipchandlers.pro">provisions@shipchandlers.pro</a>
+                </div>
+              </div>
+
+              <div class="dept-card">
+                <div class="dept-card__info">
+                  <h4>Технический отдел (IMPA/ISSA)</h4>
+                  <p>ЗИП, клапаны, палубное и машинное снабжение</p>
+                </div>
+                <div class="dept-card__contact">
+                  <a href="mailto:technical@shipchandlers.pro">technical@shipchandlers.pro</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Port Hubs & Radar Visual Map -->
+          <div class="port-map-visual fade-in">
+            <div class="map-radar-bg"></div>
+            
+            <div class="port-map-header">
+              <div class="dispatch-badge" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: #FFFFFF;">
+                <span>Сеть морских терминалов</span>
+              </div>
+              <h3>Опорные пункты базирования флота</h3>
+              <p>Собственные склады и причальные мощности в крупнейших акваториях:</p>
+            </div>
+
+            <div class="port-pins-grid">
+              <div class="port-pin-card active">
+                <div class="port-pin-card__name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Черноморский бассейн (Новороссийск, Тамань, Туапсе)</span>
+                </div>
+                <span class="port-pin-card__status">Главный терминал</span>
+              </div>
+
+              <div class="port-pin-card">
+                <div class="port-pin-card__name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Балтийский бассейн (Санкт-Петербург, Усть-Луга, Калининград)</span>
+                </div>
+                <span class="port-pin-card__status">Склад 4 500 м²</span>
+              </div>
+
+              <div class="port-pin-card">
+                <div class="port-pin-card__name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Дальневосточный бассейн (Владивосток, Находка, Восточный)</span>
+                </div>
+                <span class="port-pin-card__status">Рейдовые катера</span>
+              </div>
+
+              <div class="port-pin-card">
+                <div class="port-pin-card__name">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span>Северный бассейн (Мурманск, Архангельск)</span>
+                </div>
+                <span class="port-pin-card__status">Арктический флот</span>
+              </div>
+            </div>
+
+            <div class="map-embed-placeholder">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                <span>Интерактивная карта Яндекс.Карты / Google Maps API</span>
+              </div>
+              <a href="contacts.html" class="btn btn--outline btn--sm" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">Все филиалы →</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand & Description -->
+        <div class="footer-col">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.svg" alt="Логотип Шипчандлер" class="logo__img" width="40" height="40">
+            <div class="logo__text">
+              <span class="logo__name">Морской <span>Снабженец</span></span>
+              <span class="logo__desc">Судовое снабжение & Шипчандлинг</span>
+            </div>
+          </a>
+          <p class="footer-brand__desc">
+            Профессиональное комплексное снабжение морских и речных судов провизией, техническим инвентарем и запасными частями во всех портах РФ.
+          </p>
+          <div class="footer-certs">
+            <span class="cert-pill">ISO 9001:2015</span>
+            <span class="cert-pill">IMPA MEMBER</span>
+            <span class="cert-pill">ISSA CERTIFIED</span>
+          </div>
+        </div>
+
+        <!-- Navigation Menu Column 1 -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Услуги снабжения</h4>
+          <ul class="footer-menu">
+            <li><a href="service-single.html?service=provisions">Продукты питания и вода</a></li>
+            <li><a href="service-single.html?service=technical">Судовое техснабжение</a></li>
+            <li><a href="service-single.html?service=bonded">Bonded stores (Duty-Free)</a></li>
+            <li><a href="service-single.html?service=spare-parts">Запчасти и инструмент</a></li>
+            <li><a href="service-single.html?service=electronics">Судовая электроника</a></li>
+            <li><a href="service-single.html?service=medicine">Медицинское снабжение</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation Menu Column 2 -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Компания</h4>
+          <ul class="footer-menu">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="index.html#vessels">Типы обслуживаемых судов</a></li>
+            <li><a href="contacts.html">География портов</a></li>
+            <li><a href="index.html#gallery">Галерея отгрузок</a></li>
+            <li><a href="about.html#certifications">Сертификаты и лицензии</a></li>
+            <li><a href="contacts.html">Реквизиты и контакты</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Summary -->
+        <div class="footer-col">
+          <h4 class="footer-col__title">Круглосуточная связь</h4>
+          <p style="margin-bottom: 0.5rem; color: #FFFFFF; font-weight: 700;">+7 (800) 555-35-35</p>
+          <p style="margin-bottom: 0.75rem;"><a href="mailto:supply@shipchandlers.pro" style="color: var(--color-accent);">supply@shipchandlers.pro</a></p>
+          <p style="font-size: 0.8125rem; line-height: 1.5;">Диспетчеры на связи 24/7/365. Подача снабжения к причалам в регламентные сроки.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ООО «Морской Снабженец». Все права защищены. Судовое снабжение (Shipchandler Services).</div>
+        <div class="footer-bottom__links">
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== LIGHTBOX MODAL ==================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Закрыть">&times;</button>
+    <button type="button" class="lightbox__nav lightbox__prev" id="lightbox-prev" aria-label="Предыдущее фото">‹</button>
+    <button type="button" class="lightbox__nav lightbox__next" id="lightbox-next" aria-label="Следующее фото">›</button>
+    <div class="lightbox__content">
+      <img src="" alt="" class="lightbox__img" id="lightbox-img">
+      <div class="lightbox__caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

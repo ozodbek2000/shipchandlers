@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доставка продуктов питания и провизии на суда — Морской Снабженец</title>
+  <meta name="description" content="Комплексное снабжение судов продовольствием: свежие овощи и фрукты, мясо, рыба, бакалея, вода и молочная продукция с доставкой к причалу и на рейд.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== TOPBAR ==================== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__contacts">
+        <div class="topbar__item badge-247">
+          <span>Диспетчерская служба 24/7</span>
+        </div>
+        <div class="topbar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Порты базирования: Новороссийск, Санкт-Петербург, Владивосток, Мурманск</span>
+        </div>
+      </div>
+      <div class="topbar__meta">
+        <div class="topbar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:supply@shipchandlers.pro">supply@shipchandlers.pro</a>
+        </div>
+        <div class="lang-switch">
+          <button type="button" class="lang-switch__btn lang-switch__btn--active">RU</button>
+          <button type="button" class="lang-switch__btn">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Главная страница">
+        <img src="assets/img/logo.svg" alt="Логотип Шипчандлер" class="logo__img" width="44" height="44">
+        <div class="logo__text">
+          <span class="logo__name">Морской <span>Снабженец</span></span>
+          <span class="logo__desc">Судовое снабжение & Шипчандлинг</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Главная навигация">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link nav__link--active">
+              <span>Услуги</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item"><a href="service-single.html?service=provisions">Доставка продуктов питания</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=technical">Судовое техническое снабжение</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=medicine">Доставка медикаментов</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=spare-parts">Доставка запчастей и инструмента</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=electronics">Судовая электроника и навигация</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=workwear">Спецодежда и СИЗ экипажа</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=household">Хозяйственные товары и химия</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#vessels" class="nav__link">
+              <span>Морские суда</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item"><a href="index.html#vessels">Сухогрузы и балкеры</a></li>
+              <li class="nav__dropdown-item"><a href="index.html#vessels">Наливные суда и танкеры</a></li>
+              <li class="nav__dropdown-item"><a href="index.html#vessels">Промысловые суда и траулеры</a></li>
+              <li class="nav__dropdown-item"><a href="index.html#vessels">Пассажирские лайнеры</a></li>
+              <li class="nav__dropdown-item"><a href="index.html#vessels">Речные суда и баржи</a></li>
+              <li class="nav__dropdown-item"><a href="index.html#vessels">Маломерные суда и буксиры</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html#ports" class="nav__link">Порты</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="header__phone">
+          <a href="tel:+78005553535" class="header__phone-link">+7 (800) 555-35-35</a>
+          <span class="header__phone-label">Бесплатно по РФ / 24/7</span>
+        </div>
+        <a href="#service-order" class="btn btn--primary btn--sm">Оставить заявку</a>
+        
+        <button type="button" class="header__toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep">/</span>
+        <a href="index.html#services">Услуги</a>
+        <span class="breadcrumbs__sep">/</span>
+        <span>Доставка продуктов питания и провизии</span>
+      </nav>
+      <h1 class="page-hero__title">Доставка продуктов питания и провизии (Provisions)</h1>
+      <p class="page-hero__desc">
+        Снабжение экипажей высококачественными свежими продуктами, мясной и рыбной гастрономией, бакалеей и питьевой водой по кодам каталогов IMPA / ISSA.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICE CONTENT LAYOUT ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="content-sidebar-layout">
+        
+        <div class="main-content">
+          <div>
+            <h2 class="section__title">Гарантия свежести и соблюдение морских стандартов</h2>
+            <p style="font-size: 1.0625rem; color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1rem;">
+              Питание экипажа в длительном рейсе — ключевой фактор работоспособности и безопасности мореплавания. Мы закупаем продукцию только у проверенных агрохолдингов и производителей первой категории с полным пакетом ветеринарных и фитосанитарных свидетельств.
+            </p>
+            <p style="font-size: 1.0625rem; color: var(--color-text-muted); line-height: 1.7;">
+              Все скоропортящиеся товары доставляются в специализированных авторефрижераторах с непрерывной регистрацией температурного режима до момента подъема на палубу судна.
+            </p>
+          </div>
+
+          <!-- Nomenclature Table -->
+          <div>
+            <h3 style="font-size: 1.375rem; margin-bottom: 0.75rem;">Базовая номенклатура продуктового снабжения</h3>
+            <div class="spec-table-wrap">
+              <table class="spec-table">
+                <thead>
+                  <tr>
+                    <th>Код категории</th>
+                    <th>Наименование группы</th>
+                    <th>Спецификация и тара</th>
+                    <th>Температурный режим</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>IMPA 17-01</strong></td>
+                    <td>Свежие овощи и зелень</td>
+                    <td>Калиброванные, деревянные/пластиковые вентилируемые ящики</td>
+                    <td>+2°C ... +6°C</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IMPA 17-02</strong></td>
+                    <td>Свежие фрукты и цитрусовые</td>
+                    <td>Яблоки, бананы, апельсины, лимоны в коробках</td>
+                    <td>+4°C ... +8°C</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IMPA 17-03</strong></td>
+                    <td>Мясо и птица (заморозка)</td>
+                    <td>Говядина, свинина, баранина, цыплята в вакуумной упаковке</td>
+                    <td>-18°C ... -24°C</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IMPA 17-04</strong></td>
+                    <td>Рыба и морепродукты</td>
+                    <td>Лосось, треска, филе минтая, креветка блочной заморозки</td>
+                    <td>-18°C ... -22°C</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IMPA 17-05</strong></td>
+                    <td>Бакалея, крупы, мука</td>
+                    <td>Мешки по 25/50 кг, европаллеты в стретч-пленке</td>
+                    <td>Сухое вентилируемое</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IMPA 17-06</strong></td>
+                    <td>Молочная продукция и сыры</td>
+                    <td>Молоко ультрапастеризованное, масло сливочное, сыры твердые</td>
+                    <td>+2°C ... +4°C</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IMPA 17-07</strong></td>
+                    <td>Питьевая вода и соки</td>
+                    <td>Бутыли 0.5 л, 1.5 л, 5 л, 19 л на поддонах</td>
+                    <td>+5°C ... +20°C</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Order Process Steps -->
+          <div>
+            <h3 style="font-size: 1.375rem; margin-bottom: 1.25rem;">Как мы работаем: этапы снабжения судна</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+              <div style="background: #FFFFFF; border: 1px solid var(--color-border); padding: 1.5rem; border-radius: var(--radius-md);">
+                <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">01</div>
+                <div style="font-weight: 700; margin-bottom: 0.25rem;">Заявка с борта</div>
+                <div style="font-size: 0.8125rem; color: var(--color-text-muted);">Капитан или суперинтендант присылает Provision List в любом удобном формате.</div>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid var(--color-border); padding: 1.5rem; border-radius: var(--radius-md);">
+                <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">02</div>
+                <div style="font-weight: 700; margin-bottom: 0.25rem;">Расчет и согласование</div>
+                <div style="font-size: 0.8125rem; color: var(--color-text-muted);">В течение 30 минут предоставляем точную калькуляцию с ценами и сроками.</div>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid var(--color-border); padding: 1.5rem; border-radius: var(--radius-md);">
+                <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">03</div>
+                <div style="font-weight: 700; margin-bottom: 0.25rem;">Складская фасовка</div>
+                <div style="font-size: 0.8125rem; color: var(--color-text-muted);">Партия собирается, маркируется по судовым отсекам и проходит ветконтроль.</div>
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid var(--color-border); padding: 1.5rem; border-radius: var(--radius-md);">
+                <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--color-accent); margin-bottom: 0.5rem;">04</div>
+                <div style="font-weight: 700; margin-bottom: 0.25rem;">Подача к борту</div>
+                <div style="font-size: 0.8125rem; color: var(--color-text-muted);">Доставка спецтранспортом к трапу или катером на рейд с подписанием накладных.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Request Form Box -->
+          <div class="form-box" id="service-order" style="border: 2px solid var(--color-accent); margin-top: 1rem;">
+            <div class="form-box__header">
+              <h3 class="form-box__title">Запросить прайс-лист на провизию</h3>
+              <p class="form-box__subtitle">Дежурный шипчандлер рассчитает стоимость провизии для вашего судна</p>
+            </div>
+
+            <form action="#" method="POST" class="order-form" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="srv-name">Контактное лицо / Суперинтендант *</label>
+                <input type="text" id="srv-name" name="name" class="form-control" placeholder="Иван Петров" required>
+                <span class="form-error-msg">Укажите ваше имя</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="srv-phone">Телефон для оперативной связи *</label>
+                <input type="tel" id="srv-phone" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+                <span class="form-error-msg">Укажите контактный номер</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="srv-port">Порт стоянки и ETA (время прихода)</label>
+                <input type="text" id="srv-port" name="port_vessel" class="form-control" placeholder="Порт Новороссийск, приход 12.10">
+              </div>
+
+              <div class="form-checkbox">
+                <input type="checkbox" id="srv-consent" name="consent" required checked>
+                <label for="srv-consent">
+                  Согласен на <a href="#">обработку персональных данных</a>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full btn--lg">
+                <span>Получить коммерческое предложение</span>
+              </button>
+
+              <div class="form-status" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h4 class="sidebar-widget__title">Все услуги снабжения</h4>
+            <div class="sidebar-menu">
+              <a href="service-single.html?service=provisions" class="active"><span>Продукты питания</span> <span>→</span></a>
+              <a href="service-single.html?service=technical"><span>Техническое снабжение</span> <span>→</span></a>
+              <a href="service-single.html?service=bonded"><span>Bonded stores (Duty-Free)</span> <span>→</span></a>
+              <a href="service-single.html?service=spare-parts"><span>Запчасти и инструмент</span> <span>→</span></a>
+              <a href="service-single.html?service=electronics"><span>Судовая электроника</span> <span>→</span></a>
+              <a href="service-single.html?service=workwear"><span>Спецодежда и СИЗ</span> <span>→</span></a>
+              <a href="service-single.html?service=household"><span>Хозтовары и химия</span> <span>→</span></a>
+              <a href="service-single.html?service=medicine"><span>Судовые медикаменты</span> <span>→</span></a>
+            </div>
+          </div>
+
+          <div class="sidebar-widget" style="background: var(--color-bg-navy); color: #FFFFFF;">
+            <h4 class="sidebar-widget__title" style="color: #FFFFFF; border-color: var(--color-accent);">Круглосуточный диспетчер</h4>
+            <p style="font-size: 0.875rem; color: #CBD5E1; margin-bottom: 1.25rem;">
+              Принимаем аварийные и срочные заявки со сроком подачи от 2-х часов в портах СПб, Новороссийска, Владивостока и Мурманска.
+            </p>
+            <a href="tel:+78005553535" class="btn btn--primary btn--full btn--sm" style="margin-bottom: 0.5rem;">+7 (800) 555-35-35</a>
+            <a href="mailto:supply@shipchandlers.pro" class="btn btn--outline btn--full btn--sm">supply@shipchandlers.pro</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.svg" alt="Логотип Шипчандлер" class="logo__img" width="40" height="40">
+            <div class="logo__text">
+              <span class="logo__name">Морской <span>Снабженец</span></span>
+              <span class="logo__desc">Судовое снабжение & Шипчандлинг</span>
+            </div>
+          </a>
+          <p class="footer-brand__desc">
+            Профессиональное комплексное снабжение морских и речных судов провизией, техническим инвентарем и запасными частями во всех портах РФ.
+          </p>
+          <div class="footer-certs">
+            <span class="cert-pill">ISO 9001:2015</span>
+            <span class="cert-pill">IMPA MEMBER</span>
+            <span class="cert-pill">ISSA CERTIFIED</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Услуги снабжения</h4>
+          <ul class="footer-menu">
+            <li><a href="service-single.html?service=provisions">Продукты питания и вода</a></li>
+            <li><a href="service-single.html?service=technical">Судовое техснабжение</a></li>
+            <li><a href="service-single.html?service=bonded">Bonded stores (Duty-Free)</a></li>
+            <li><a href="service-single.html?service=spare-parts">Запчасти и инструмент</a></li>
+            <li><a href="service-single.html?service=electronics">Судовая электроника</a></li>
+            <li><a href="service-single.html?service=medicine">Медицинское снабжение</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Компания</h4>
+          <ul class="footer-menu">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="index.html#vessels">Типы обслуживаемых судов</a></li>
+            <li><a href="contacts.html">География портов</a></li>
+            <li><a href="index.html#gallery">Галерея отгрузок</a></li>
+            <li><a href="about.html#certifications">Сертификаты и лицензии</a></li>
+            <li><a href="contacts.html">Реквизиты и контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Круглосуточная связь</h4>
+          <p style="margin-bottom: 0.5rem; color: #FFFFFF; font-weight: 700;">+7 (800) 555-35-35</p>
+          <p style="margin-bottom: 0.75rem;"><a href="mailto:supply@shipchandlers.pro" style="color: var(--color-accent);">supply@shipchandlers.pro</a></p>
+          <p style="font-size: 0.8125rem; line-height: 1.5;">Диспетчеры на связи 24/7/365. Подача снабжения к причалам в регламентные сроки.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ООО «Морской Снабженец». Все права защищены. Судовое снабжение (Shipchandler Services).</div>
+        <div class="footer-bottom__links">
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
