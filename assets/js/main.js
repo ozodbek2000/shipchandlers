@@ -1,7 +1,7 @@
 /**
  * SHIPCHANDLER PRO - MAIN VANILLA JAVASCRIPT
  * High-performance, zero-dependency script for UI interactions,
- * mobile drawer, touch gestures, mobile action bar, dropdowns, gallery lightbox, and form validation.
+ * mobile drawer, touch gestures, dropdowns, gallery lightbox, and form validation.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -45,29 +45,36 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(nav);
       }
     } else {
+      closeMobileMenu();
       if (nav && headerInner && nav.parentElement === document.body) {
         const actions = headerInner.querySelector('.header__actions');
         headerInner.insertBefore(nav, actions);
       }
     }
   };
-  window.addEventListener('resize', syncNavPlacement);
-  syncNavPlacement();
+
+  const openMobileMenu = () => {
+    toggleBtn?.setAttribute('aria-expanded', 'true');
+    nav?.classList.add('nav--open');
+    document.documentElement.classList.add('menu-open');
+    document.body.classList.add('menu-open');
+  };
 
   const closeMobileMenu = () => {
-    if (nav?.classList.contains('nav--open')) {
-      nav.classList.remove('nav--open');
-      toggleBtn?.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
+    toggleBtn?.setAttribute('aria-expanded', 'false');
+    nav?.classList.remove('nav--open');
+    document.documentElement.classList.remove('menu-open');
+    document.body.classList.remove('menu-open');
   };
 
   if (toggleBtn && nav) {
     toggleBtn.addEventListener('click', () => {
       const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-      toggleBtn.setAttribute('aria-expanded', !isExpanded);
-      nav.classList.toggle('nav--open');
-      document.body.style.overflow = !isExpanded ? 'hidden' : '';
+      if (isExpanded) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
 
     // Close menu when clicking outside on mobile
@@ -108,6 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  window.addEventListener('resize', syncNavPlacement);
+  syncNavPlacement();
+
   // Mobile Submenu Accordion & link auto-close
   navLinks.forEach((link) => {
     const parentItem = link.parentElement;
@@ -140,50 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- 4. FLOATING MOBILE ACTION BAR ---
-  if (!document.querySelector('.mobile-action-bar')) {
-    const isOrderPage = document.querySelector('#order-form, #order');
-    const orderHref = isOrderPage ? '#order-form' : 'index.html#order-form';
-
-    const actionBar = document.createElement('div');
-    actionBar.className = 'mobile-action-bar';
-    actionBar.setAttribute('role', 'navigation');
-    actionBar.setAttribute('aria-label', 'Быстрые действия на мобильном');
-    actionBar.innerHTML = `
-      <a href="tel:+78005553535" class="mobile-action-bar__item mobile-action-bar__item--call">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-        </svg>
-        <span>Звонок</span>
-      </a>
-      <a href="https://wa.me/78005553535" target="_blank" rel="noopener noreferrer" class="mobile-action-bar__item mobile-action-bar__item--wa">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-        </svg>
-        <span>WhatsApp</span>
-      </a>
-      <a href="https://t.me/shipchandler_rf" target="_blank" rel="noopener noreferrer" class="mobile-action-bar__item mobile-action-bar__item--tg" style="color: #229ED9;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="22" y1="2" x2="11" y2="13"></line>
-          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-        </svg>
-        <span>Telegram</span>
-      </a>
-      <a href="${orderHref}" class="mobile-action-bar__item mobile-action-bar__item--order">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-          <polyline points="10 9 9 9 8 9"></polyline>
-        </svg>
-        <span>Заявка</span>
-      </a>
-    `;
-    document.body.appendChild(actionBar);
-  }
-
-  // --- 5. TABLE HORIZONTAL SWIPE HINT ---
+  // --- 4. TABLE HORIZONTAL SWIPE HINT ---
   const tableWrappers = document.querySelectorAll('.spec-table-wrap');
   tableWrappers.forEach((wrap) => {
     if (!wrap.previousElementSibling?.classList.contains('table-scroll-hint')) {
@@ -197,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // --- 6. SCROLL REVEAL ANIMATIONS (IntersectionObserver) ---
+  // --- 5. SCROLL REVEAL ANIMATIONS (IntersectionObserver) ---
   const animatedElements = document.querySelectorAll('.fade-in');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(
@@ -217,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedElements.forEach((el) => el.classList.add('is-visible'));
   }
 
-  // --- 7. GALLERY LIGHTBOX & MOBILE TOUCH SWIPE ---
+  // --- 6. GALLERY LIGHTBOX & MOBILE TOUCH SWIPE ---
   const galleryItems = document.querySelectorAll('.gallery-item');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
@@ -249,13 +216,15 @@ document.addEventListener('DOMContentLoaded', () => {
     currentGalleryIndex = index;
     updateLightboxContent();
     lightbox.classList.add('lightbox--active');
-    document.body.style.overflow = 'hidden';
+    document.documentElement.classList.add('menu-open');
+    document.body.classList.add('menu-open');
   }
 
   function closeLightbox() {
     if (!lightbox) return;
     lightbox.classList.remove('lightbox--active');
-    document.body.style.overflow = '';
+    document.documentElement.classList.remove('menu-open');
+    document.body.classList.remove('menu-open');
   }
 
   function updateLightboxContent() {
@@ -311,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'ArrowLeft') showPrevImage();
   });
 
-  // --- 8. REQUEST FORM VALIDATION & SUBMISSION ---
+  // --- 7. REQUEST FORM VALIDATION & SUBMISSION ---
   const orderForms = document.querySelectorAll('.order-form');
 
   orderForms.forEach((form) => {
