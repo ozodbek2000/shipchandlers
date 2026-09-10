@@ -241,13 +241,4 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
-
-  // --- 6. LANGUAGE SWITCHER TOGGLE ---
-  const langButtons = document.querySelectorAll('.lang-switch__btn');
-  langButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      langButtons.forEach((b) => b.classList.remove('lang-switch__btn--active'));
-      btn.classList.add('lang-switch__btn--active');
-    });
-  });
 });

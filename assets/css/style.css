@@ -548,28 +548,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent);
 }
 
-.lang-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.2rem 0.5rem;
-  border-radius: var(--radius-sm);
-}
-
-.lang-switch__btn {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--color-text-light);
-  padding: 0.1rem 0.35rem;
-  border-radius: 3px;
-}
-
-.lang-switch__btn--active {
-  background-color: var(--color-accent);
-  color: #FFFFFF;
-}
-
 .header {
   position: sticky;
   top: 0;
