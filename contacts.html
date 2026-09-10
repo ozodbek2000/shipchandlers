@@ -290,21 +290,9 @@
           </form>
         </div>
 
-        <!-- Map Container -->
-        <div class="map-container">
-          <div class="map-placeholder-bg"></div>
-          <div class="map-placeholder__content">
-            <div class="map-placeholder__icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <h3 class="map-placeholder__title">Интерактивная карта портовой сети</h3>
-            <p class="map-placeholder__text">
-              Здесь подключается скрипт интерактивной карты Яндекс.Карт или Google Maps. Координаты основных портов и причалов отгрузки уже подготовлены в коде.
-            </p>
-            <div style="font-size: 0.8125rem; background: rgba(0,0,0,0.3); padding: 0.75rem; border-radius: 6px; border: 1px dashed rgba(255,255,255,0.2);">
-              &lt;div id="yandex-map" class="map-embed" data-coords="44.7244, 37.7675"&gt;&lt;/div&gt;
-            </div>
-          </div>
+        <!-- Map Container with Google Maps Embed -->
+        <div class="map-container map-container--has-iframe">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5852.729611858997!2d132.8998665363678!3d42.82290725274991!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fb13fb801bfa06f%3A0x10ef840258bdf2cd!2z0J3QsNGF0L7QtNC60LjQvdGB0LrQuNC5INC80L7RgNGB0LrQvtC5INGC0L7RgNCz0L7QstGL0Lkg0L_QvtGA0YI!5e0!3m2!1sru!2s!4v1789033908519!5m2!1sru!2s" width="100%" height="100%" style="border:0; min-height: 480px; display: block; width: 100%; border-radius: var(--radius-lg);" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Находкинский морской торговый порт"></iframe>
         </div>
       </div>
 
