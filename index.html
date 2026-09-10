@@ -74,17 +74,17 @@
             </ul>
           </li>
           <li class="nav__item">
-            <a href="#vessels" class="nav__link">
+            <a href="vessels.html" class="nav__link">
               <span>Морские суда</span>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
             <ul class="nav__dropdown">
-              <li class="nav__dropdown-item"><a href="#vessels">Сухогрузы и балкеры</a></li>
-              <li class="nav__dropdown-item"><a href="#vessels">Наливные суда и танкеры</a></li>
-              <li class="nav__dropdown-item"><a href="#vessels">Промысловые суда и траулеры</a></li>
-              <li class="nav__dropdown-item"><a href="#vessels">Пассажирские лайнеры</a></li>
-              <li class="nav__dropdown-item"><a href="#vessels">Речные суда и баржи</a></li>
-              <li class="nav__dropdown-item"><a href="#vessels">Маломерные суда и буксиры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#bulk">Сухогрузы и балкеры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#tankers">Наливные суда и танкеры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#trawlers">Промысловые суда и траулеры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#passenger">Пассажирские лайнеры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#river">Речные суда и баржи</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#tugs">Маломерные суда и буксиры</a></li>
             </ul>
           </li>
           <li class="nav__item">
@@ -363,6 +363,133 @@
           </div>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICED VESSELS SECTION (6 CARDS) ==================== -->
+  <section class="section section--navy" id="vessels">
+    <div class="container">
+      <div class="section__header fade-in">
+        <span class="section__badge">Обслуживаемый флот</span>
+        <h2 class="section__title">Морские суда, которые мы снабжаем</h2>
+        <p class="section__subtitle">
+          Индивидуальный расчет рациона, технических расходников и графика подачи под специфику каждого типа флота.
+        </p>
+      </div>
+
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <!-- Vessel 1 -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">01 / КАРГО</span>
+            <img src="assets/img/vessels/vessel-bulk.jpg" alt="Сухогрузы, балкеры и контейнеровозы" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Сухогрузы и балкеры</h3>
+            <p class="service-card__desc">
+              Снабжение провизией длительного хранения на океанские переходы до 90 суток, палубный и крепежный инвентарь, смазки и фильтры.
+            </p>
+            <a href="vessels.html#bulk" class="service-card__link">
+              <span>Подробнее о снабжении</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vessel 2 -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">02 / НАЛИВ</span>
+            <img src="assets/img/vessels/vessel-tanker.jpg" alt="Наливные суда и танкеры" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Наливные суда и танкеры</h3>
+            <p class="service-card__desc">
+              Искробезопасный инструмент, взрывозащищенное оборудование ATEX, снабжение на нефтяных терминалах и рейдах.
+            </p>
+            <a href="vessels.html#tankers" class="service-card__link">
+              <span>Подробнее о снабжении</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vessel 3 -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">03 / РЫБАК</span>
+            <img src="assets/img/vessels/vessel-trawler.jpg" alt="Промысловые суда и траулеры" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Промысловые суда и траулеры</h3>
+            <p class="service-card__desc">
+              Провизия на длительные путины (до 100+ человек), упаковочные материалы для рыбопродукции, спецодежда и промысловый такелаж.
+            </p>
+            <a href="vessels.html#trawlers" class="service-card__link">
+              <span>Подробнее о снабжении</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vessel 4 -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">04 / КРУИЗ</span>
+            <img src="assets/img/vessels/vessel-passenger.jpg" alt="Пассажирские лайнеры" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Пассажирские лайнеры</h3>
+            <p class="service-card__desc">
+              Гастрономия ресторанного уровня, напитки и табак Duty-Free (Bonded stores), текстиль и бытовая химия для кают.
+            </p>
+            <a href="vessels.html#passenger" class="service-card__link">
+              <span>Подробнее о снабжении</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vessel 5 -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">05 / РЕКА-МОРЕ</span>
+            <img src="assets/img/vessels/vessel-river.jpg" alt="Речные суда и баржи" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Речные суда и баржи</h3>
+            <p class="service-card__desc">
+              Поставка на рейдовых стоянках речных артерий (Волга, Дон, Нева), тросы, счальные элементы и запчасти речных дизелей.
+            </p>
+            <a href="vessels.html#river" class="service-card__link">
+              <span>Подробнее о снабжении</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Vessel 6 -->
+        <article class="service-card fade-in">
+          <div class="service-card__image-wrap">
+            <span class="service-card__num">06 / ПОРТОФЛОТ</span>
+            <img src="assets/img/vessels/vessel-tug.jpg" alt="Маломерные суда и буксиры" class="service-card__image" loading="lazy">
+          </div>
+          <div class="service-card__content">
+            <h3 class="service-card__title">Маломерные суда и буксиры</h3>
+            <p class="service-card__desc">
+              Оперативная подача снабжения от 1 часа: свежие продукты малых партий, гидравлика, буксирные тросы и кранцы.
+            </p>
+            <a href="vessels.html#tugs" class="service-card__link">
+              <span>Подробнее о снабжении</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="vessels.html" class="btn btn--outline btn--lg">Подробный каталог обслуживаемого флота →</a>
       </div>
     </div>
   </section>
@@ -898,7 +1025,7 @@
           <h4 class="footer-col__title">Компания</h4>
           <ul class="footer-menu">
             <li><a href="about.html">О компании</a></li>
-            <li><a href="index.html#vessels">Типы обслуживаемых судов</a></li>
+            <li><a href="vessels.html">Типы обслуживаемых судов</a></li>
             <li><a href="contacts.html">География портов</a></li>
             <li><a href="index.html#gallery">Галерея отгрузок</a></li>
             <li><a href="about.html#certifications">Сертификаты и лицензии</a></li>

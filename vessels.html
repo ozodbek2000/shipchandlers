@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Морские суда — Обслуживаемый флот | Морской Снабженец</title>
+  <meta name="description" content="Судовое снабжение всех типов судов: сухогрузы, балкеры, наливные танкеры, промысловые траулеры, круизные лайнеры, речные баржи и буксиры во всех портах РФ.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==================== TOPBAR ==================== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__contacts">
+        <div class="topbar__item badge-247">
+          <span>Диспетчерская служба 24/7</span>
+        </div>
+        <div class="topbar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Порты базирования: Новороссийск, Санкт-Петербург, Владивосток, Мурманск</span>
+        </div>
+      </div>
+      <div class="topbar__meta">
+        <div class="topbar__item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:supply@shipchandlers.pro">supply@shipchandlers.pro</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Главная страница">
+        <img src="assets/img/logo.svg" alt="Логотип Шипчандлер" class="logo__img" width="44" height="44">
+        <div class="logo__text">
+          <span class="logo__name">Морской <span>Снабженец</span></span>
+          <span class="logo__desc">Судовое снабжение &amp; Шипчандлинг</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Главная навигация">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#services" class="nav__link">
+              <span>Услуги</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item"><a href="service-single.html?service=provisions">Доставка продуктов питания</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=technical">Судовое техническое снабжение</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=medicine">Доставка медикаментов</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=spare-parts">Доставка запчастей и инструмента</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=electronics">Судовая электроника и навигация</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=workwear">Спецодежда и СИЗ экипажа</a></li>
+              <li class="nav__dropdown-item"><a href="service-single.html?service=household">Хозяйственные товары и химия</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="vessels.html" class="nav__link nav__link--active">
+              <span>Морские суда</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="nav__dropdown">
+              <li class="nav__dropdown-item"><a href="vessels.html#bulk">Сухогрузы и балкеры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#tankers">Наливные суда и танкеры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#trawlers">Промысловые суда и траулеры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#passenger">Пассажирские лайнеры</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#river">Речные суда и баржи</a></li>
+              <li class="nav__dropdown-item"><a href="vessels.html#tugs">Маломерные суда и буксиры</a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="index.html#ports" class="nav__link">Порты</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="header__phone">
+          <a href="tel:+78005553535" class="header__phone-link">+7 (800) 555-35-35</a>
+          <span class="header__phone-label">Бесплатно по РФ / 24/7</span>
+        </div>
+        <a href="index.html#order-form" class="btn btn--primary btn--sm">Оставить заявку</a>
+        
+        <button type="button" class="header__toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span class="breadcrumbs__sep">/</span>
+        <span>Морские суда</span>
+      </nav>
+      <h1 class="page-hero__title">Снабжение флота всех типов и классов</h1>
+      <p class="page-hero__desc">
+        Комплексное снабжение судов морского, речного и промыслового регистра. Учитываем специфику рейсов, численность экипажа, технологические особенности грузовых операций и международные регламенты.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="content-sidebar-layout">
+        
+        <div class="main-content">
+          
+          <!-- 1. BULK CARRIERS -->
+          <article class="service-card" id="bulk" style="margin-bottom: 2.5rem; overflow: hidden;">
+            <div class="service-card__image-wrap" style="padding-top: 50%;">
+              <img src="assets/img/vessels/vessel-bulk.jpg" alt="Сухогрузы и балкеры" class="service-card__image" loading="lazy">
+              <span class="service-card__num">01 / КАРГО</span>
+            </div>
+            <div class="service-card__content" style="padding: 2rem;">
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--color-primary);">Сухогрузы, балкеры и контейнеровозы</h2>
+              <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                Суда сухогрузного и балкерного флота требуют автономного запаса провизии на длительные океанские и морские переходы (от 30 до 90 суток). Мы формируем укрупненные партии длительного хранения, обеспечиваем такелажным инвентарем, крепежными материалами для грузов, тросами и смазками.
+              </p>
+
+              <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+                <h4 style="font-size: 0.9375rem; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Специфика снабжения балкеров:</h4>
+                <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; font-size: 0.875rem; color: var(--color-text-main);">
+                  <li>✓ Провизия длительного хранения (крупы, мука, консервы)</li>
+                  <li>✓ Мясо и рыба глубокой заморозки (-24°C) на 25-35 человек</li>
+                  <li>✓ Моющие средства для трюмов и палубного оборудования</li>
+                  <li>✓ Стальные канаты, швартовые концы, скобы и талрепы</li>
+                  <li>✓ Судовые фильтры и масла для главных двигателей</li>
+                  <li>✓ Сертификаты фитосанитарного и карантинного контроля</li>
+                </ul>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <a href="index.html#order-form" class="btn btn--primary">Заказать снабжение сухогруза</a>
+                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Подача к причалу: от 2 часов</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. TANKERS -->
+          <article class="service-card" id="tankers" style="margin-bottom: 2.5rem; overflow: hidden;">
+            <div class="service-card__image-wrap" style="padding-top: 50%;">
+              <img src="assets/img/vessels/vessel-tanker.jpg" alt="Наливные суда и танкеры" class="service-card__image" loading="lazy">
+              <span class="service-card__num">02 / НАЛИВНОЙ ФЛОТ</span>
+            </div>
+            <div class="service-card__content" style="padding: 2rem;">
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--color-primary);">Наливные суда, танкеры и газовозы (LNG/LPG)</h2>
+              <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                Повышенные требования пожаровзрывобезопасности (ISGOTT) и жесткие экологические регламенты терминалов. Обеспечиваем искробезопасным инструментом, взрывозащищенным освещением, огнезащитными СИЗ и подачей снабжения как на терминалах, так и на рейдовых стоянках через сертифицированные катера.
+              </p>
+
+              <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+                <h4 style="font-size: 0.9375rem; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Специфика снабжения танкеров:</h4>
+                <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; font-size: 0.875rem; color: var(--color-text-main);">
+                  <li>✓ Искробезопасный бронзовый слесарный инструмент</li>
+                  <li>✓ Взрывозащищенные фонари ATEX/IECEx</li>
+                  <li>✓ Антистатическая огнестойкая спецодежда экипажа</li>
+                  <li>✓ Провизия и бутилированная вода с доставкой на рейд</li>
+                  <li>✓ Средства ликвидации разливов (сорбенты, боны)</li>
+                  <li>✓ Судовая химия для танков и балластных систем</li>
+                </ul>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <a href="index.html#order-form" class="btn btn--primary">Заказать снабжение танкера</a>
+                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Доставка на внешний рейд 24/7</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. TRAWLERS -->
+          <article class="service-card" id="trawlers" style="margin-bottom: 2.5rem; overflow: hidden;">
+            <div class="service-card__image-wrap" style="padding-top: 50%;">
+              <img src="assets/img/vessels/vessel-trawler.jpg" alt="Промысловые суда и траулеры" class="service-card__image" loading="lazy">
+              <span class="service-card__num">03 / РЫБОПРОМЫСЕЛ</span>
+            </div>
+            <div class="service-card__content" style="padding: 2rem;">
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--color-primary);">Рыбопромысловые суда, траулеры и плавбазы</h2>
+              <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                Рыболовные рейсы длятся месяцами в тяжелых погодных условиях (Охотское, Баренцево, Берингово моря). Численность экипажа на плавбазах и БАТМ достигает 80–120 человек. Обеспечиваем усиленным рационом питания, материалами для упаковки рыбопродукции, такелажем и теплой влагозащитной экипировкой.
+              </p>
+
+              <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+                <h4 style="font-size: 0.9375rem; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Специфика снабжения траулеров:</h4>
+                <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; font-size: 0.875rem; color: var(--color-text-main);">
+                  <li>✓ Крупные партии провизии на экипажи до 100+ моряков</li>
+                  <li>✓ Тара, стретч-пленка, шпагат и упаковочные материалы</li>
+                  <li>✓ Промысловый такелаж, тросы, ролики, блоки</li>
+                  <li>✓ Непромокаемые костюмы, фартуки, перчатки для рыбообработки</li>
+                  <li>✓ Расширенная судовая аптека для автономного плавания</li>
+                  <li>✓ Технические соли, хладагенты и аммиачные расходники</li>
+                </ul>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <a href="index.html#order-form" class="btn btn--primary">Заказать снабжение траулера</a>
+                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Порты: Владивосток, Мурманск, Находка</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. PASSENGER CRUISE -->
+          <article class="service-card" id="passenger" style="margin-bottom: 2.5rem; overflow: hidden;">
+            <div class="service-card__image-wrap" style="padding-top: 50%;">
+              <img src="assets/img/vessels/vessel-passenger.jpg" alt="Пассажирские лайнеры" class="service-card__image" loading="lazy">
+              <span class="service-card__num">04 / ПАССАЖИРСКИЙ ФЛОТ</span>
+            </div>
+            <div class="service-card__content" style="padding: 2rem;">
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--color-primary);">Пассажирские круизные лайнеры и паромы</h2>
+              <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                Снабжение ресторанного уровня, строгие стандарты сервировки, подача элитных напитков по каталогам Duty-Free (Bonded stores), текстиль для кают отельного класса и бытовая химия премиального сегмента. Точное соблюдение коротких окон стоянки у круизных причалов.
+              </p>
+
+              <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+                <h4 style="font-size: 0.9375rem; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Специфика снабжения лайнеров:</h4>
+                <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; font-size: 0.875rem; color: var(--color-text-main);">
+                  <li>✓ Гастрономия ресторанного уровня, свежая зелень и деликатесы</li>
+                  <li>✓ Беспошлинные товары Bonded Stores (алкоголь, табак, косметика)</li>
+                  <li>✓ Отельный текстиль: белье, полотенца, халаты, тапочки</li>
+                  <li>✓ Профессиональная химия для прачечных и посудомоечных машин</li>
+                  <li>✓ Питьевая бутилированная вода премиум-брендов</li>
+                  <li>✓ Скоростная погрузка в жесткие тайм-слоты стоянки</li>
+                </ul>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <a href="index.html#order-form" class="btn btn--primary">Заказать снабжение лайнера</a>
+                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Порты: Санкт-Петербург, Сочи, Владивосток</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. RIVER VESSELS -->
+          <article class="service-card" id="river" style="margin-bottom: 2.5rem; overflow: hidden;">
+            <div class="service-card__image-wrap" style="padding-top: 50%;">
+              <img src="assets/img/vessels/vessel-river.jpg" alt="Речные суда и баржи" class="service-card__image" loading="lazy">
+              <span class="service-card__num">05 / РЕКА-МОРЕ</span>
+            </div>
+            <div class="service-card__content" style="padding: 2rem;">
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--color-primary);">Суда смешанного плавания «река-море», баржи</h2>
+              <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                Теплоходы типа «Волго-Балт», «Волго-Дон», «Сормовский» и несамоходные баржи, работающие на внутренних водных путях и в прибрежных морских акваториях. Подаем снабжение в устьевых портах, на шлюзах и рейдовых перевалках.
+              </p>
+
+              <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+                <h4 style="font-size: 0.9375rem; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Специфика снабжения речного флота:</h4>
+                <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; font-size: 0.875rem; color: var(--color-text-main);">
+                  <li>✓ Провизия на экипажи 10–16 человек на 15–30 суток</li>
+                  <li>✓ Подача на рейдовые стоянки на Волге, Дону, Неве и Азове</li>
+                  <li>✓ Буксирные и счальные тросы для баржебуксирных составов</li>
+                  <li>✓ Запасные части дизелей 6ЧН, 8ЧН и вспомогательных ДГ</li>
+                  <li>✓ Судовые краски и противообрастающие эмали</li>
+                  <li>✓ Средства навигации для ВВП и морских прибрежных районов</li>
+                </ul>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <a href="index.html#order-form" class="btn btn--primary">Заказать снабжение река-море</a>
+                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Порты: Азов, Ростов, СПб, Астрахань</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. TUGS AND HARBOR CRAFT -->
+          <article class="service-card" id="tugs" style="margin-bottom: 2.5rem; overflow: hidden;">
+            <div class="service-card__image-wrap" style="padding-top: 50%;">
+              <img src="assets/img/vessels/vessel-tug.jpg" alt="Маломерные суда и буксиры" class="service-card__image" loading="lazy">
+              <span class="service-card__num">06 / ПОРТОФЛОТ</span>
+            </div>
+            <div class="service-card__content" style="padding: 2rem;">
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem; color: var(--color-primary);">Морские буксиры, лоцманские катера и портофлот</h2>
+              <p style="color: var(--color-text-muted); line-height: 1.7; margin-bottom: 1.25rem;">
+                Портовый и вспомогательный флот работает в режиме непрерывных маневров и дежурства. Снабжаем свежей провизией малыми партиями «до борта», гидравлическими маслами, канатами высокой прочности, кранцевой защитой и запчастями азимутальных колонок.
+              </p>
+
+              <div style="background: var(--color-bg-subtle); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem;">
+                <h4 style="font-size: 0.9375rem; color: var(--color-primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Специфика снабжения портофлота:</h4>
+                <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.5rem; font-size: 0.875rem; color: var(--color-text-main);">
+                  <li>✓ Быстрая доставка свежей провизии на экипажи 4–8 человек</li>
+                  <li>✓ Синтетические буксирные тросы повышенной разрывной нагрузки</li>
+                  <li>✓ Резиновые кранцы и защитные отбойные элементы</li>
+                  <li>✓ Гидравлические масла для лебедок и подруливающих устройств</li>
+                  <li>✓ Навигационные огни, прожекторы и сигнальные средства</li>
+                  <li>✓ Спецодежда для палубных швартовых команд</li>
+                </ul>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                <a href="index.html#order-form" class="btn btn--primary">Заказать снабжение буксира</a>
+                <span style="font-size: 0.8125rem; color: var(--color-text-muted);">Подача к причалу: от 1 часа</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h4 class="sidebar-widget__title">Типы судов</h4>
+            <div class="sidebar-menu">
+              <a href="#bulk"><span>Сухогрузы и балкеры</span> <span>→</span></a>
+              <a href="#tankers"><span>Танкеры и газовозы</span> <span>→</span></a>
+              <a href="#trawlers"><span>Рыбопромысловый флот</span> <span>→</span></a>
+              <a href="#passenger"><span>Пассажирские лайнеры</span> <span>→</span></a>
+              <a href="#river"><span>Суда «река-море»</span> <span>→</span></a>
+              <a href="#tugs"><span>Буксиры и портофлот</span> <span>→</span></a>
+            </div>
+          </div>
+
+          <div class="sidebar-widget" style="background: var(--color-bg-navy); color: #FFFFFF;">
+            <h4 class="sidebar-widget__title" style="color: #FFFFFF; border-color: var(--color-accent);">Диспетчер флота 24/7</h4>
+            <p style="font-size: 0.875rem; color: #CBD5E1; margin-bottom: 1.25rem;">
+              Сообщите название судна, порт захода и ETA. Подготовим снабжение к моменту швартовки или якорной стоянки.
+            </p>
+            <a href="tel:+78005553535" class="btn btn--primary btn--full btn--sm" style="margin-bottom: 0.5rem;">+7 (800) 555-35-35</a>
+            <a href="mailto:supply@shipchandlers.pro" class="btn btn--outline btn--full btn--sm">supply@shipchandlers.pro</a>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4 class="sidebar-widget__title">Каталог поставок</h4>
+            <div class="sidebar-menu">
+              <a href="service-single.html?service=provisions"><span>Продукты питания</span> <span>→</span></a>
+              <a href="service-single.html?service=technical"><span>Техническое снабжение</span> <span>→</span></a>
+              <a href="service-single.html?service=bonded"><span>Bonded Stores (Duty-Free)</span> <span>→</span></a>
+              <a href="service-single.html?service=medicine"><span>Судовая аптека</span> <span>→</span></a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.svg" alt="Логотип Шипчандлер" class="logo__img" width="40" height="40">
+            <div class="logo__text">
+              <span class="logo__name">Морской <span>Снабженец</span></span>
+              <span class="logo__desc">Судовое снабжение &amp; Шипчандлинг</span>
+            </div>
+          </a>
+          <p class="footer-brand__desc">
+            Профессиональное комплексное снабжение морских и речных судов провизией, техническим инвентарем и запасными частями во всех портах РФ.
+          </p>
+          <div class="footer-certs">
+            <span class="cert-pill">ISO 9001:2015</span>
+            <span class="cert-pill">IMPA MEMBER</span>
+            <span class="cert-pill">ISSA CERTIFIED</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Услуги снабжения</h4>
+          <ul class="footer-menu">
+            <li><a href="service-single.html?service=provisions">Продукты питания и вода</a></li>
+            <li><a href="service-single.html?service=technical">Судовое техснабжение</a></li>
+            <li><a href="service-single.html?service=bonded">Bonded stores (Duty-Free)</a></li>
+            <li><a href="service-single.html?service=spare-parts">Запчасти и инструмент</a></li>
+            <li><a href="service-single.html?service=electronics">Судовая электроника</a></li>
+            <li><a href="service-single.html?service=medicine">Медицинское снабжение</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Обслуживаемый флот</h4>
+          <ul class="footer-menu">
+            <li><a href="vessels.html#bulk">Сухогрузы и балкеры</a></li>
+            <li><a href="vessels.html#tankers">Наливные суда и танкеры</a></li>
+            <li><a href="vessels.html#trawlers">Промысловые суда и траулеры</a></li>
+            <li><a href="vessels.html#passenger">Пассажирские лайнеры</a></li>
+            <li><a href="vessels.html#river">Речные суда и баржи</a></li>
+            <li><a href="vessels.html#tugs">Маломерные суда и буксиры</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col__title">Круглосуточная связь</h4>
+          <p style="margin-bottom: 0.5rem; color: #FFFFFF; font-weight: 700;">+7 (800) 555-35-35</p>
+          <p style="margin-bottom: 0.75rem;"><a href="mailto:supply@shipchandlers.pro" style="color: var(--color-accent);">supply@shipchandlers.pro</a></p>
+          <p style="font-size: 0.8125rem; line-height: 1.5;">Диспетчеры на связи 24/7/365. Подача снабжения к причалам в регламентные сроки.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 ООО «Морской Снабженец». Все права защищены. Судовое снабжение (Shipchandler Services).</div>
+        <div class="footer-bottom__links">
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
