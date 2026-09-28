@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.querySelector('.header__toggle');
   if (headerActions && toggleBtn && !document.querySelector('.header__mobile-call')) {
     const mobileCallBtn = document.createElement('a');
-    mobileCallBtn.href = 'tel:+78005553535';
+    mobileCallBtn.href = 'tel:+79841885430';
     mobileCallBtn.className = 'header__mobile-call';
     mobileCallBtn.setAttribute('aria-label', 'Позвонить диспетчеру 24/7');
     mobileCallBtn.innerHTML = `
@@ -94,14 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const drawerFooter = document.createElement('div');
       drawerFooter.className = 'nav__drawer-footer';
       drawerFooter.innerHTML = `
-        <a href="tel:+78005553535" class="nav__drawer-phone">+7 (800) 555-35-35</a>
-        <div class="nav__drawer-label">Круглосуточный диспетчер 24/7</div>
+        <a href="tel:+79841885430" class="nav__drawer-phone">+7 (984) 188-54-30</a>
+        <div class="nav__drawer-label"><a href="tel:+79147198033" style="color:inherit; font-weight:700;">+7 (914) 719-80-33</a> &bull; Офис г. Находка</div>
         <div class="nav__drawer-messengers">
-          <a href="https://wa.me/78005553535" target="_blank" rel="noopener noreferrer" class="btn-messenger btn-messenger--wa">
+          <a href="https://wa.me/79841885430" target="_blank" rel="noopener noreferrer" class="btn-messenger btn-messenger--wa">
             <span>WhatsApp</span>
           </a>
-          <a href="https://t.me/shipchandler_rf" target="_blank" rel="noopener noreferrer" class="btn-messenger btn-messenger--tg">
-            <span>Telegram</span>
+          <a href="mailto:bereg-dv@mail.ru" class="btn-messenger" style="background: rgba(255,140,0,0.15); color: #FFA500; border: 1px solid rgba(255,140,0,0.3);">
+            <span>bereg-dv@mail.ru</span>
           </a>
         </div>
         <a href="index.html#order-form" class="btn btn--primary btn--full nav__drawer-cta">
