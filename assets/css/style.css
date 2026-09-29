@@ -628,10 +628,10 @@ h1, h2, h3, h4, h5, h6 {
 .logo__img {
   width: auto;
   height: 44px;
-  max-width: 68px;
+  max-width: 140px;
   object-fit: contain;
   background: #FFFFFF;
-  padding: 3px 6px;
+  padding: 4px 8px;
   border-radius: var(--radius-sm);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
@@ -2675,8 +2675,8 @@ h1, h2, h3, h4, h5, h6 {
   .logo__img {
     width: auto;
     height: 38px;
-    max-width: 58px;
-    padding: 2px 5px;
+    max-width: 115px;
+    padding: 2px 6px;
   }
 
   .logo__name {
